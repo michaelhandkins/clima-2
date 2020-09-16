@@ -108,4 +108,11 @@ extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
+    
+    @IBAction func locationButtonPressed(_ sender: UIButton) {
+        
+        locationManager.requestLocation()
+        
+    }
+    
 }
