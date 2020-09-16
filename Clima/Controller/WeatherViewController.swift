@@ -20,6 +20,7 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        weatherManager.delegate = self
         searchTextField.delegate = self
     }
     
@@ -58,3 +59,10 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
 
 }
 
+extension WeatherViewController: WeatherManagerDelegate {
+    
+    func didUpdateWeather(_ weather: WeatherModel) {
+        print(weather.roundedTempString)
+    }
+    
+}
