@@ -32,18 +32,6 @@ class WeatherViewController: UIViewController {
 
 }
 
-//MARK: - Weather Manager Delegate Methods
-
-extension WeatherViewController: WeatherManagerDelegate {
-    func didFailWithError(_ weatherManager: WeatherManager, error: Error) {
-        print(error)
-    }
-    
-    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
-        print(weather.roundedTempString)
-    }
-    
-}
 
 //MARK: - Text Field Delegate Methods
 
@@ -75,5 +63,25 @@ extension WeatherViewController: UITextFieldDelegate {
         
     }
 
+    
+}
+
+//MARK: - Weather Manager Delegate Methods
+
+extension WeatherViewController: WeatherManagerDelegate {
+    func didFailWithError(_ weatherManager: WeatherManager, error: Error) {
+        print(error)
+    }
+    
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
+        
+        DispatchQueue.main.async {
+            self.temperatureLabel.text = weather.roundedTempString
+            self.cityLabel.text = weather.cityName
+            self.conditionImageView.image = UIImage(systemName: weather.conditionSymbol)
+            
+        }
+        
+    }
     
 }
