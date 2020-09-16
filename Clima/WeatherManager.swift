@@ -28,12 +28,49 @@ struct WeatherManager {
                 }
                 
                 if let safeData = data {
-                    let dataString = String(data: safeData, encoding: .utf8)
-                    print(dataString!)
+                    self.parseJSON(weatherData: safeData)
                 }
             }
             
             task.resume()
+        }
+        
+    }
+    
+    func parseJSON(weatherData: Data) {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
+            print(decodedData.name)
+            print(decodedData.main.temp)
+            print(decodedData.weather[0].description)
+            let id = decodedData.weather[0].id
+            print(self.getConditionName(weatherId: id))
+        } catch {
+            print(error)
+        }
+        
+    }
+    
+    func getConditionName(weatherId: Int) -> String {
+     
+        switch weatherId {
+        case 200...232:
+            return "cloud.bolt.rain"
+        case 300...321:
+            return "cloud.drizzle"
+        case 500...531:
+            return "cloud.heavyrain"
+        case 600...622:
+            return "snow"
+        case 701...781:
+            return "cloud.fog"
+        case 800:
+            return "sun.max"
+        case 801...804:
+            return "cloud.bolt"
+        default:
+            return "cloud"
         }
         
     }
