@@ -24,7 +24,7 @@ Upon launching the app, users will receive a pop-up requesting their permission 
 
 Users can also search for the weather of a specific city using the search bar at the top of the screen.
 
-![](https://github.com/michaelhandkins/whats-the-weather)
+![](https://github.com/michaelhandkins/whats-the-weather/blob/master/wtw_location.gif)
 
 At any point while using the app, the location icon to the left of the search bar can be tapped to display the weather for the user's current location.
 
