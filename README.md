@@ -1,4 +1,4 @@
-# whats-the-weather
+# What's The Weather?
 
 Dark-mode enabled weather app that allows the user to check the weather for their current location based on the GPS data from the phone as well as by searching for a city manually.
 
