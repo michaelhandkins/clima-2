@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:wtw_location.gif">
+   </FileRef>
+   <FileRef
+      location = "group:wtw_darkmode.png">
+   </FileRef>
+   <FileRef
+      location = "group:wtw_permission.gif">
+   </FileRef>
+   <FileRef
+      location = "group:wtw_search.gif">
+   </FileRef>
+   <FileRef
+      location = "container:whats_the_weather.xcodeproj">
+   </FileRef>
+</Workspace>
