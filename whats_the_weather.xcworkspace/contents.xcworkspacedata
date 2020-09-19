@@ -14,6 +14,6 @@
       location = "group:wtw_search.gif">
    </FileRef>
    <FileRef
-      location = "container:whats_the_weather.xcodeproj">
+      location = "container:/Users/michaelhandkins/Desktop/Practice Apps/Bootcamp Apps/Clima-2/Clima.xcodeproj">
    </FileRef>
 </Workspace>

@@ -52,7 +52,7 @@
 		ADAA27A4231BBFAF00365194 = {
 			isa = PBXGroup;
 			children = (
-				ADAA27AF231BBFAF00365194 /* What's The Weather? */,
+				ADAA27AF231BBFAF00365194 /* Clima */,
 				ADAA27AE231BBFAF00365194 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADAA27AF231BBFAF00365194 /* What's The Weather? */ = {
+		ADAA27AF231BBFAF00365194 /* Clima */ = {
 			isa = PBXGroup;
 			children = (
 				ADAA27B0231BBFAF00365194 /* AppDelegate.swift */,
@@ -80,7 +80,7 @@
 				ADAA27C4231BC02B00365194 /* light_background.pdf */,
 				C257EB382512A73200BF9B86 /* WeatherManagerDelegate.swift */,
 			);
-			path = "What's The Weather?";
+			path = Clima;
 			sourceTree = "<group>";
 		};
 		ADAA27C8231BC3E500365194 /* Controller */ = {
@@ -144,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADAA27A8231BBFAF00365194 /* Build configuration list for PBXProject "whats_the_weather" */;
+			buildConfigurationList = ADAA27A8231BBFAF00365194 /* Build configuration list for PBXProject "Clima" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -367,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADAA27A8231BBFAF00365194 /* Build configuration list for PBXProject "whats_the_weather" */ = {
+		ADAA27A8231BBFAF00365194 /* Build configuration list for PBXProject "Clima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADAA27BF231BBFB300365194 /* Debug */,
